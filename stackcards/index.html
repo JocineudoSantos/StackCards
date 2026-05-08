@@ -45,11 +45,10 @@
             <p>Sua plataforma de curadoria e revisão espaçada</p>
         </header>
         <section class="search-section" arial-label="Pesquisar">
-        <div class="search-container">
-            <input type="text" 
-            placeholder="Buscar por assunto"
-            aria-label="Campo de pesquisa">
-        </div>
+            <div class="search-container">
+                <input type="text" placeholder="Buscar por assunto" aria-label="Campo de pesquisa"
+                    onkeyup="searchFlashcards(event)">
+            </div>
         </section>
         <article class="flashcard">
             <span class="flashcard-category">
@@ -58,11 +57,13 @@
             <h2 class="flashcard-question">
                 Qual é a função do Flexbox no CSS?
             </h2>
-            <button class="btn-primary"
-            aria-label="Mostrar resposta">
+            <button onclick="showResult()" class="btn-primary" aria-label="Mostrar resposta">
                 Mostrar Resposta
         </article>
+        <section id="result"> </section>
+
     </main>
+    <script src="main.js"></script>
 </body>
 
 </html>

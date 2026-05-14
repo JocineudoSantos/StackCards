@@ -1,69 +1,45 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="en">
 
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stack Cards</title>
-    <link rel="stylesheet" href="style.css">
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script/script.js" defer></script>
+    <title>Document</title>
 </head>
 
 <body>
-    <!-- <header>
-        <div class="title">
-            <div class="logo">
-                <img src="" alt="">
-            </div>
-            <div class="text">
-                <h1>Stack Cards</h1>
-                <p>Revisão Inteligente</p>
-            </div>
-        </div>
-        <nav class="nav-principal">
-            <a href="">Ciência</a>
-            <a href="">Funcionalidades</a>
-            <a href="">Agente de IA</a>
-            <a href="">FAQ</a>
-        </nav>
-        <div class="buttons">
-            <div>
-                <img src="" alt="">
-            </div>
-            <div>
-                <a href="">Entrar Grátis</a>
-            </div>
-        </div>
-    </header> -->
-    <main class="container">
-        <header>
-            <h1>Academic Hub Flashcards</h1>
+    <header class="app-header">
+        <div class="brand">
+            <h1>Academic Hub</h1>
             <p>Sua plataforma de curadoria e revisão espaçada</p>
-        </header>
-        <section class="search-section" arial-label="Pesquisar">
+        </div>
+        <div class="header-actions">
+            <button id="themeToggle" class="btn-primary" aria-label="Alternar Tema Escuro">
+                Modo Claro
+            </button>
+        </div>
+    </header>
+    <main class="container">
+        <section class="search-section" aria-label="Pesquisa">
             <div class="search-container">
-                <input type="text" placeholder="Buscar por assunto" aria-label="Campo de pesquisa"
-                    onkeyup="searchFlashcards(event)">
+                <input type="text" placeholder="Buscar por assunsto" aria-label="Campo de pesquisa" />
             </div>
         </section>
         <article class="flashcard">
-            <span class="flashcard-category">
-                Arquitetura CSS
-            </span>
-            <h2 class="flashcard-question">
-                Qual é a função do Flexbox no CSS?
-            </h2>
-            <button onclick="showResult()" class="btn-primary" aria-label="Mostrar resposta">
+            <span class="flashcard-category"> Arquitetura CSS </span>
+            <h2 class="flashcard-question">Qual é a função do Flexbox no CSS?</h2>
+            <button class="btn-primary" aria-label="Mostrar resposta">
                 Mostrar Resposta
+            </button>
         </article>
-        <section id="result"> </section>
-
     </main>
-    <script src="main.js"></script>
 </body>
 
 </html>
